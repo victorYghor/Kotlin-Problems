@@ -1,5 +1,5 @@
 # Kotlin-problems-hyperskill
-## Find multiples
+## Count multiples
 Find how multiples of a given number N there are in the range of interegrs *WITHOUT FOR LOOPS*
 
 ## Create an euphonious word
