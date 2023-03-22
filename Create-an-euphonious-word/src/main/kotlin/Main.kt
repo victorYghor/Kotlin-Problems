@@ -83,3 +83,63 @@ fun main() {
     println(solveClusters(word))
     println(solveClusters(word).length - word.length)
 }
+
+/*
+val vowels: List<Char> = listOf('a', 'e', 'i', 'o', 'u', 'y')
+val consonants: List<Char> = listOf('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n',
+    'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'z')
+
+fun findClusters(word: String):MutableList<Int?> {
+    val sizesOfClusters: MutableList<Int?> = mutableListOf()
+    var countV = 2
+    var countC = 2
+    var lastLetter: Char? = null
+    var nextToLetter: Char? = null
+
+    for (letter in word) {
+        if (vowels.contains(letter) && (if (lastLetter != null ) vowels.contains(lastLetter) else false) && vowels.contains(nextToLetter)) {
+            ++countV
+        } else if (consonants.contains(letter) && (if (lastLetter != null ) consonants.contains(lastLetter) else false) && consonants.contains(nextToLetter)){
+            ++countC
+        } else if (countV >= 3) {
+            sizesOfClusters.add(countV)
+            countV = 2
+        } else if (countC >= 3) {
+            sizesOfClusters.add(countC)
+            countC = 2
+        }
+        nextToLetter = lastLetter
+        lastLetter = letter
+    }
+    if (countV >= 3) {
+        sizesOfClusters.add(countV)
+    } else if (countC >= 3) {
+        sizesOfClusters.add(countC)
+    }
+        return sizesOfClusters
+}
+
+fun lettersToPut(clusters: MutableList<Int?>): Int {
+    if (clusters.size == 0) {
+        return 0
+    }
+    for (i in clusters.indices) {
+        if (clusters[i]!! % 2 == 0 ) {
+            clusters[i] = clusters[i]!! / 2 - 1
+        } else if (clusters[i]!! % 2 == 1) {
+            clusters[i] = clusters[i]!! / 2
+        }
+    }
+    var sum = 0
+    for (size in clusters){
+
+        sum += size!!
+    }
+    return sum
+}
+
+fun main() {
+    val word = readln()
+    println(lettersToPut(findClusters(word)))
+}
+*/
