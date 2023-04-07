@@ -9,7 +9,6 @@ The remaining letters are consonants.
 
 A word is considered euphonious if it doesn't have three or more vowels or consonants in a row. Otherwise, it is considered discordant.
 
-Your task is to create euphonious words from the discordant ones. You can insert any letters inside the word. Output the minimum number of characters needed to create a euphonious word from a given word.
-
+Your task is to create euphonious words from the discordant ones. You can insert any letters inside the word.
 For example, the word "schedule" is considered discordant because it has three consonants in a row: "sch". To create a euphonious word you need to add any vowel between 's' and 'c' or between 'c' and 'h'.
 fixed string with 3 or more vowels or consoansts and return a string fixed
