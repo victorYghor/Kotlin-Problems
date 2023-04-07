@@ -13,7 +13,7 @@ Your task is to create euphonious words from the discordant ones. You can insert
 For example, the word "schedule" is considered discordant because it has three consonants in a row: "sch". To create a euphonious word you need to add any vowel between 's' and 'c' or between 'c' and 'h'.
 fixed string with 3 or more vowels or consoansts and return a string fixed
 
-##Simple calculator
+## Simple calculator
 The program does the following operations:
             sum(+) -> 1 + 3 = 4
             subtract(-) -> 3 - 2 = 1
